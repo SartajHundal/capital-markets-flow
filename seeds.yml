@@ -1,0 +1,8 @@
+# models/seeds.yml
+
+financial_statements:
+ enabled: true
+ schema: your_schema
+ database: your_database
+ file_format: csv
+ path: "{{ dbt_project_dir }}/data/financial_statements.csv"
