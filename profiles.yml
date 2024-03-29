@@ -1,0 +1,14 @@
+# ~/.dbt/profiles.yml
+
+salesforce_staging:
+ target: dev
+ outputs:
+    dev:
+      type: postgres # or another database type supported by Salesforce
+      host: your_salesforce_host
+      user: your_salesforce_user
+      pass: your_salesforce_password
+      port: 5432 # or another port if necessary
+      dbname: your_salesforce_dbname
+      schema: your_salesforce_schema
+      threads: 1
